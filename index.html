@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jane Smith Photography</title>
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/main.css" /> 
+        <link rel ="stylesheet" type="text/css" href="styles/normalize.css" /> 
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header id="home">
+            <!-- insert bg-img in css-->
+            <div class="home-arrow">
+                <p><a href="#home">Home</a></p>
+            </div>
+            <div class="header-content">
+                <h1>Jane Smith Photography</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li><!--
+                        --><li><a href="#photos">Portfolio</a></li><!--
+                        --><li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main> <!-- 100% of viewport -->  
+            <!--<div class="home-arrow">
+                <p><a href="#home">Home</a></p>
+            </div>--> 
+            <section class="center" id="about"> <!-- 75% of main -->
+                <div class="center" id="about-photo-div">
+                    <img src="img/alfonso-reyes-712273-unsplash.jpg" alt="A Photo of Jane Smith holding a camera"  id="about-photo" width="470.824px" height="470.824px"/>
+                </div>
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod arcu ac arcu imperdiet maximus. Vivamus nisi purus, mollis ut eros ac, commodo ultricies purus. Suspendisse venenatis tellus in lorem feugiat, sed ultricies quam rhoncus. Ut efficitur erat ac eleifend sagittis. Pellentesque vel mauris fringilla, varius neque nec, elementum augue. Phasellus congue enim convallis vulputate faucibus. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et nisi a eros tincidunt mollis. Phasellus tortor magna, bibendum ac consequat non, semper eget neque.</p> 
+            </section>
+            <section class="center" id="photos"> <!-- 75% of main -->
+                <h2>Portfolio</h2>
+                <div class="portfolio-img-container">
+                    <a href="landscape.php">
+                        <div class="noClue animate-img">
+                            <p>Landscape</p>
+                            <img src="img/aditya-saxena-K2nUCxCzGzI-unsplash.jpg" id="nature"> 
+                        </div>
+                    </a>
+                    <a href="lifestyle.php">
+                        <div class="noClue animate-img">
+                            <p>Lifestyle</p>
+                            <img src="img/dawid-zawila-256946-unsplash.jpg"> 
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-img-container">
+                    <a href="nature.php">
+                        <div class="noClue animate-img">
+                            <p>Nature</p>
+                            <img src="img/aj-robbie-BuQ1RZckYW4-unsplash.jpg">
+                        </div>
+                    </a>
+                    <a href="travel.php">
+                        <div class="noClue animate-img">
+                            <p>Travel</p>
+                            <img src="img/dino-reichmuth-A5rCN8626Ck-unsplash.jpg">
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="center" id="contact">
+                <h2>Contact</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod arcu ac arcu imperdiet maximus. Vivamus nisi purus, mollis ut eros ac, commodo ultricies purus. Suspendisse venenatis tellus in lorem feugiat, sed ultricies quam rhoncus. Ut efficitur erat ac eleifend sagittis.</p>
+                <form action="mail.php" method="POST">
+                    <div class="display-message">Message Sent</div> 
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fName" required/> 
+                    </div>
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lName" required/> 
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required/> 
+                    </div>
+                    <div>
+                        <label for="textarea">Message:</label>
+                        <textarea rows="4" cols="50" id="textarea" name="user-msg" ></textarea>
+                    </div>
+                    <input type="submit" id="submit-btn" value="Send" /> 
+                </form>
+            </section>
+        </main>
+        <script src="scripts/scroll.js"></script> 
+        <footer>
+            <p>Web Development By Moses McKnight</p>
+        </footer>
+        <script src="scripts/scroll.js"></script> 
+    </body>
+</html>
