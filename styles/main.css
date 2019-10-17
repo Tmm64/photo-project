@@ -328,6 +328,19 @@ footer p{
 /***************
 MEDIA QUIERIES 
 ***************/
+@media screen and (min-width: 1440px){
+    body,html{
+        margin: 0 auto; 
+    }
+
+    .home-arrow{
+        display: none; 
+    }
+}
+
+
+
+
 @media screen and (max-width: 1008px){
     body, html{
         font-size: 46.875%;
